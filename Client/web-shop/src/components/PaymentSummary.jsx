@@ -138,7 +138,7 @@ const PaymentSummary = ({ setEstimatedDeliveryDate, taxRate = 0.1, onPlaceOrder 
           onChange={handleShippingChange}
         />
         <div>
-          <div className="delivery-option-date">$4.50 Shipping</div>
+          <div className="delivery-option-date">$4.00 Shipping</div>
           <div className="delivery-option-price">2 days</div>
         </div>
       </div>
