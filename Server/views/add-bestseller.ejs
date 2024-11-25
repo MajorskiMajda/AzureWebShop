@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Bestseller</title>
+    <link rel="stylesheet" href="/styles.css"> 
+</head>
+<body>
+    <h1>Add Bestseller</h1>
+
+    <form action="/bestsellers/add" method="POST">
+        <label for="productId">Product ID:</label>
+        <input type="text" id="productId" name="productId" required>
+
+        <button type="submit">Add to Bestsellers</button>
+    </form>
+
+    <div>
+        <a href="/products">Go back to product list</a>
+    </div>
+
+</body>
+</html>
