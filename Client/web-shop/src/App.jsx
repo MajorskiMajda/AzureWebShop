@@ -12,7 +12,7 @@ function App() {
   const [productData, setProductData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5001/products') 
+    fetch('https://azurewebshop.onrender.com/products') 
       .then((response) => response.json())
       .then((data) => setProductData(data))
       .catch((error) => console.error('Error fetching products:', error));

@@ -11,7 +11,7 @@ const Orders = () => {
 
     const fetchOrders = async () => {
       try {
-        const response = await axios.get('http://localhost:5001/orders');
+        const response = await axios.get('https://azurewebshop.onrender.com/orders');
         setOrders(response.data);
       } catch (error) {
         console.error('Error fetching orders:', error);

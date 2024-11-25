@@ -13,7 +13,7 @@ function SwiperComponent() {
     useEffect(() => {
         const fetchBestsellers = async () => {
             try {
-                const response = await fetch('http://localhost:5001/bestsellers');
+                const response = await fetch('https://azurewebshop.onrender.com/bestsellers');
                 const data = await response.json();
                 setBestsellers(data);
             } catch (err) {

@@ -69,7 +69,7 @@ const PaymentSummary = ({ setEstimatedDeliveryDate, taxRate = 0.1, onPlaceOrder 
       };
       console.log(typeof deliveryDate);
       console.log(orderDetails.productId);
-      const response = await fetch('http://localhost:5001/orders', {
+      const response = await fetch('https://azurewebshop.onrender.com/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

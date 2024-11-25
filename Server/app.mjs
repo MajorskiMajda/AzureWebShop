@@ -17,7 +17,7 @@ const __dirname = path.dirname(__filename);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'https://azurewebshop.onrender.com' }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -249,5 +249,5 @@ app.post('/bestsellers/add', async (req, res) => {
 
 
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+    console.log(`Server is running on port: ${port}`);
 });
