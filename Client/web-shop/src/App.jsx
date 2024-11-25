@@ -12,14 +12,24 @@ function App() {
   const [productData, setProductData] = useState([]);
 
   useEffect(() => {
-    fetch('https://azurewebshop.onrender.com/products') 
-      .then((response) => response.json())
-      .then((data) => setProductData(data))
-      .catch((error) => console.error('Error fetching products:', error));
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch('https://azurewebshop.onrender.com/products');
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        setProductData(data);
+      } catch (error) {
+        console.error('Error fetching products:', error);
+      }
+    };
+
+    fetchProducts();
   }, []);
 
   return (
-    <Router>
+    <Router basename="/AzureWebShop"> 
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
