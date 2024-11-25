@@ -32,7 +32,7 @@ function App() {
     <Router basename="/AzureWebShop"> 
       <NavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/AzureWebShop/" element={<Home />} />
         <Route path="/jewelry" element={<Jewelry />} />
         <Route path="/product/:id" element={<ProductView products={productData} />} />
         <Route path="/cart" element={<CheckoutPage />} />
