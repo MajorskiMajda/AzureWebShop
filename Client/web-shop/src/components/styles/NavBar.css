@@ -1,0 +1,130 @@
+header {
+    background-color: #ff7700;
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 99;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    color: white;
+}
+
+.nav-list {
+    margin: 0;
+    margin-left: auto;
+    padding: 0.5vw;
+}
+
+header ul {
+    padding-left: 0 !important;
+    margin-left: auto;
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    justify-content: right;
+}
+
+header img {
+    min-width: 20px;
+    max-width: 100px;
+}
+
+.cart-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.cart-q {
+    position: absolute;
+    margin-left: 10px;
+    top: 5px;
+    background-color: aliceblue;
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+
+    .hamburger-menu {
+        display: block;
+        margin-left: auto;
+    }
+
+    ul.nav-list {
+        position: absolute;
+        top: 48px;
+        left: 0;
+        right: 0;
+        background-color: #ff7700;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        flex-direction: column;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0s 0.5s;
+        z-index: 5;
+    }
+
+    ul.nav-list.active {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+    ul.nav-list:not(.active) {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0s 0.5s;
+    }
+
+    ul li {
+        margin: 5px 0;
+    }
+
+    ul li a {
+        font-size: 18px;
+    }
+
+    .cart-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cart-q {
+        top: 0;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+header ul.nav-list {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}

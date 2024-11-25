@@ -1,0 +1,177 @@
+body{
+    background-color: rgb(240, 236, 231);
+}
+.prod-container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+ 
+}
+.category-name{
+    border-bottom: 2px solid grey;
+    font-size: 4vw;
+    
+}
+.container-pr {
+    width: 80%;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-bottom: 8vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-container:hover{
+   transform: scale(1.05);
+}
+
+.prod-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    
+}
+
+.earrings {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+}
+
+.product-container {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 60px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    box-shadow: 2px 2px 4px #958b87;
+    transition: transform 0.3s ease;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.xx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+
+.prod-container img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.info-container {
+    padding: 15px;
+    text-align: left;
+    justify-content: center;
+}
+
+.name-container h4,
+.name-container p {
+    margin: 5px 0;
+    font-weight: 400;
+}
+
+.name-container .earring-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.name-container .price1 {
+    font-size: 1rem;
+    color: #b12704;
+    margin: 0;
+}
+
+.name-container .earring-description {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.product-container:hover .prod-container img {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 800px) {
+    .prod-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .container-pr {
+        width: fit-content;
+    }
+
+    .prod-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .earrings {
+        gap: 15px;
+    }
+
+    .product-container {
+        width: 100%;
+    }
+
+    .prod-container img {
+        width: 90%;
+    }
+    .category-name{
+        font-size: 7vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .prod-container h1 {
+        font-size: 1.2rem;
+    }
+
+    .name-container .earring-name {
+        font-size: 1rem;
+    }
+
+    .name-container .price1 {
+        font-size: 0.9rem;
+    }
+
+    .name-container .earring-description {
+        font-size: 0.8rem;
+    }
+    .prod-container img {
+        width: 60%;
+    } 
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}

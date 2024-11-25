@@ -1,0 +1,107 @@
+.delivery-option-date{
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+.place-order{
+    background-color: #ff7700;
+    color: white;
+    font-size: 2.5vw;
+    border-radius: 3vw;
+}
+.order-info{
+    padding-top: 0.2vw;
+    padding-bottom: 0.2vw;
+}
+.place-order:hover{
+    background-color: #ffffff;
+    color: #ff7700;
+    cursor: pointer;
+}
+.delivery-option {
+    display: grid;
+    grid-template-columns: 2vw 1fr;
+    cursor: pointer;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+  }
+  .delivery-option-input {
+    margin-left: 0px;
+    cursor: pointer;
+    width: 1.5vw;
+  }
+  
+  .delivery-option-date {
+    padding-left: 1vw;
+    font-size: 1.5vw;
+  }
+
+.delivery-options {
+    border-top: 0.2vw rgb(96, 96, 96) solid;
+  }
+
+.summary-text{
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0.4vw;
+}
+.num-size{
+    font-size: 1.5vw;
+}
+.style{
+    font-weight: 600;
+}
+.delivery-options-title{
+    font-size: 2vw;
+    margin-bottom: 1vw;
+}
+
+.disabled{
+    background-color: bisque;
+}
+.disabled:hover{
+    background-color: bisque;
+    color: white;
+    cursor: not-allowed;
+}
+@media screen and (max-width: 800px) {
+    .place-order{
+        font-size: 3.5vw;
+    }
+}
+@media (min-width: 200px) and (max-width: 800px) {
+
+    .num-size {
+      font-size: 3vw;
+    }  
+    .delivery-option-price {
+      font-size: 2.3vw;
+    }
+    .summary-text{
+        font-size: 3vw;
+    }
+  
+    .delivery-option {
+      font-size: 3vw;
+      margin-top: 2vw;
+      margin-bottom: 2vw;
+    }
+  
+    .delivery-options-title {
+      font-size: 3vw;
+      margin-bottom: 2vw;
+    }
+  
+  
+    .delivery-option-date {
+      font-size: 2.5vw;
+    }
+    
+  
+    .delivery-option-input {
+      width: 3vw;
+    }
+  
+    .delivery-option {
+      gap: 2vw;
+    }
+  }

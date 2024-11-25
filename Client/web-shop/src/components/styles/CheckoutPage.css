@@ -1,0 +1,156 @@
+body {
+  background-color: rgb(240, 236, 231);
+}
+
+.list-div {
+  height: fit-content;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1.5px solid rgb(213, 217, 217);
+  margin-right: 2vw;
+  box-shadow: 2px 2px 4px #958b87;
+  width: 65%;
+  flex-direction: column;
+  display: flex;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.title-div {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: rgb(240, 242, 242);
+  color: rgb(0, 0, 0);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding-left: 1vw;
+  padding: 10px;
+}
+
+.place-order {
+  width: 100%;
+  font-size: 2vw;
+  background-color: orange;
+}
+
+.order-summary-div {
+  height: fit-content;
+  padding: 2vw;
+  padding-bottom: 1vw;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+}
+
+
+section {
+  padding: 3vw;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-content {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  position: relative;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 20px;
+  width: 100%;
+  padding: 2vw;
+  background-color: rgb(255, 255, 255);
+
+}
+
+
+.sticky-container {
+  height: fit-content;
+  position: sticky;
+  position: -webkit-sticky;
+  width: 35%;
+  display: block;
+  top: 8vw;
+  border-radius: 20px;
+  border: 1.5px solid rgb(213, 217, 217);
+  background-color: rgb(254, 254, 254);
+  box-shadow: 2px 2px 4px #958b87
+}
+
+.div-total {
+  display: flex;
+}
+
+.total-price {
+  margin-left: auto;
+}
+
+.delivery-title {
+  margin-bottom: 1vw;
+  font-size: 3vw;
+  padding-top: 1vw;
+  padding-left: 1vw;
+}
+
+
+.order-info {
+  display: flex;
+  align-items: center;
+}
+
+.num-size {
+  margin-left: auto;
+  font-size: 1.8vw;
+}
+
+.delivery-option-price {
+  font-size: 1.2vw;
+  opacity: 70%;
+  padding-left: 1vw;
+}
+
+@media (min-width: 200px) and (max-width: 800px) {
+  .sticky-container {
+    top: 1vw;
+    position: relative;
+    width: 80%;
+    order: 1;
+  }
+
+  .list-div {
+    width: 80%;
+  }
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-div {
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 3vw !important;
+  }
+
+  .num-size {
+    font-size: 2.2vw;
+  }
+}

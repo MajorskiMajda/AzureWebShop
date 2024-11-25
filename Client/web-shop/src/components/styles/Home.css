@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Lora:wght@400;700&display=swap");
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2{
+    font-family: 'Lora', serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.shop-btn{
+    font-size: 2vw !important;
+    font-weight: 600;
+    margin-top: 1vw;
+}
+.shop-btn:hover{
+    background-color:#ffffff;
+    color:#ff7700;
+    cursor: pointer;
+}
+
+.landing-page {
+    background-color: rgb(240, 236, 231);
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    z-index: 0;
+}
+
+.landing-img {
+    background-color: aqua;
+    width: 30%;
+    height: 90%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://i.ibb.co/4F6QcNy/expensive-golden-ring-with-white-powder-background-23-2150347027.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 48%;
+    border-bottom-right-radius: 48%;
+    position: relative;
+    top: -70px;
+    z-index: 1;
+    /* border: 6px solid #ff7700; */
+    box-shadow: 8px 8px 10px #958b87,
+    -8px -8px 10px #ffffff;
+}
+
+.landing-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 0.5vw;
+}
+
+.landing-text h1 {
+    font-size: 4.7vw;
+    margin: 0;
+}
+.sub-hed {
+    font-size: 3vw;
+    margin: 0;
+}
+
+.landing-text button {
+    background-color: #ff7700;
+    color: white;
+    border-radius: 3vw;
+    padding: 1.2vw;
+}
+
+.second-img {
+    width: 30%;
+    height: 70%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://i.ibb.co/4F6QcNy/expensive-golden-ring-with-white-powder-background-23-2150347027.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 48%;
+    border-top-right-radius: 48%;
+    position: relative;
+    top: 150px;
+    z-index: 0;
+    border: 6px solid #ff7700;
+}
+
+.info-container-home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(240, 236, 231);
+    
+}
+
+.info-container-home img {
+    width: 50%;
+    z-index: 5;
+    border-radius: none;
+}
+
+.text-container {
+    padding: 8vw;
+    width: 50%;
+    box-sizing: border-box;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.fourth-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(240, 236, 231);
+    border-top: 1.5vw solid #ff7700;
+
+}
+
+.fourth-div img {
+    margin-left: 5vw;
+    width: 40%;
+    height: 45vw;
+    position: relative;
+    top: 20px;
+    border-top-left-radius: 48%;
+    border-top-right-radius: 48%;
+    /* border: 6px solid #ff4d00; */
+    box-shadow: 8px 8px 10px #958b87,
+        -8px -8px 10px #ffffff;
+
+}
+
+.swiper-div {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8vw;
+    padding-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(240, 236, 231);
+}
+
+h2 {
+    font-size: 4vw;
+    margin: 0;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('https://i.ibb.co/zfTQRn9/download.png');
+        background-size: 20vw;
+        margin: 0;
+        padding: 0;
+    }
+    .shop-btn{
+        font-size: 5vw !important;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        font-weight: 600;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .landing-page {
+        background-color: rgb(240, 236, 231);
+        width: 100%;
+        height: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+        gap: 5vw;
+        margin-top: 5vw;
+    }
+
+    .landing-img {
+        top: 0;
+        order: 1;
+        width: 60%;
+        border-radius: 50%;
+    }
+
+    .landing-text {
+        font-size: 3.5vw;
+        width: 70%;
+        order: 2;
+        text-align: center;
+        gap: 1vw;
+    }
+    .landing-text h1{
+        font-size: 6vw;
+    }
+    .landing-page button{
+        width: fit-content;
+        font-size: 3vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-div {
+        text-align: center;
+        background-color: rgb(240, 236, 231);
+        width: 100%;
+    }
+
+    .info-container-home {
+        flex-direction: column;
+    }
+
+    .info-container-home img {
+        width: 60%;
+        order: 1;
+        border-radius: 50%;
+        box-shadow: 8px 8px 8px #958b87,
+        -8px -8px 8px #ffffff;
+    }
+
+    .text-container {
+        order: 2;
+        width: 60%;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .fourth-div {
+        position: relative;
+        flex-direction: column;
+        background-color: none;
+        height: fit-content;
+    }
+
+
+    .fourth-div img {
+        display: none;
+    }
+    h2 {
+        font-size: 5vw;
+        margin: 0;
+    }
+    
+    p {
+        font-size: 2.5vw;
+    }
+
+
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}

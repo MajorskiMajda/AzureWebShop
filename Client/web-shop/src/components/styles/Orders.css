@@ -1,0 +1,160 @@
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 236, 231);
+}
+
+
+.page-title {
+    width: 60%;
+    margin: 2vw 0;
+    font-size: 4vw;
+}
+
+
+.order-container {
+    width: 60%;
+    margin-bottom: 5vw;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 4px #958b87;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+
+.orders-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+h3{
+    margin-top: 0;
+}
+
+
+.order-header {
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 1.5vw;
+}
+
+
+.order-header-left-section {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.order-header-label {
+    font-weight: 600;
+}
+
+.order-date,
+.order-total {
+    margin-right: 5vw;
+}
+
+.order-header-right-section {
+    flex-shrink: 1;
+}
+
+
+.order-details-grid {
+    padding: 20px 25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.product-item{
+    display: flex;
+    flex-direction: row;
+}
+
+.product-image-container {
+    width: 30%;
+    margin-right: 3vw;
+}
+
+.product-image-container img {
+    width: 100%;
+    border-radius: 10px;  
+}
+
+
+.product-details {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.product-name {
+    font-size: 3vw !important;
+    font-weight: 400;
+    margin: 0;
+}
+.description{
+    font-size: 2vw;
+}
+
+.product-delivery-date,
+.product-quantity {
+    font-size: 2vw;
+    margin-bottom: 3px;
+}
+
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+@media (max-width: 800px) {
+    .order-container{
+        width: 90%;
+    }
+    .button-div{
+        flex-direction: column;
+        gap: 5px;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .button{
+        font-size: 2vw ;
+    }
+    .page-title {
+        width: 90%;
+    }
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
