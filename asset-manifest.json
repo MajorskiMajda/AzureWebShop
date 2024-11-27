@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/AzureWebShop/static/css/main.c34d091a.css",
-    "main.js": "/AzureWebShop/static/js/main.1a45a00a.js",
+    "main.css": "/AzureWebShop/static/css/main.622b9d95.css",
+    "main.js": "/AzureWebShop/static/js/main.ef65bdde.js",
     "static/media/NavIcon.svg": "/AzureWebShop/static/media/NavIcon.13449bf1db1142d2873a436adfb51729.svg",
     "index.html": "/AzureWebShop/index.html",
-    "main.c34d091a.css.map": "/AzureWebShop/static/css/main.c34d091a.css.map",
-    "main.1a45a00a.js.map": "/AzureWebShop/static/js/main.1a45a00a.js.map"
+    "main.622b9d95.css.map": "/AzureWebShop/static/css/main.622b9d95.css.map",
+    "main.ef65bdde.js.map": "/AzureWebShop/static/js/main.ef65bdde.js.map"
   },
   "entrypoints": [
-    "static/css/main.c34d091a.css",
-    "static/js/main.1a45a00a.js"
+    "static/css/main.622b9d95.css",
+    "static/js/main.ef65bdde.js"
   ]
 }
