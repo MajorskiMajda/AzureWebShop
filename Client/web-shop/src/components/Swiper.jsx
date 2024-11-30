@@ -40,8 +40,8 @@ function SwiperComponent() {
                         slidesPerView: 1,
                         spaceBetween: 10,
                     },
-                    780: {
-                        slidesPerView: 2,
+                    850: {
+                        slidesPerView: 1,
                         spaceBetween: 30,
                     },
                     1200: {
