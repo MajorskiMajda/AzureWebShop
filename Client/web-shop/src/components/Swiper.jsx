@@ -38,9 +38,9 @@ function SwiperComponent() {
                 breakpoints={{
                     350: {
                         slidesPerView: 1,
-                        spaceBetween: 10,
+                        spaceBetween: 30,
                     },
-                    850: {
+                    860: {
                         slidesPerView: 1,
                         spaceBetween: 30,
                     },
